@@ -6,30 +6,30 @@ using Urho;
 
 namespace UrhoArkitDemo
 {
-    public class UrhoApp : ArkitApp
+	public class UrhoApp : ArkitApp
 	{
 		Node bookshelfNode;
 		bool scaling;
 
-        [Preserve]
-        public UrhoApp(ApplicationOptions opts) : base(opts) { }
+		[Preserve]
+		public UrhoApp(ApplicationOptions opts) : base(opts) { }
 
-        protected override unsafe void Start()
-        {
-            base.Start();
+		protected override unsafe void Start()
+		{
+			base.Start();
 
-            bookshelfNode = Scene.InstantiateXml(
-                source: ResourceCache.GetFile("Objects/Scene.xml"),
-                position: new Vector3(0, -1f, 1f),
-                rotation: new Quaternion(0, 90, 0));
-            bookshelfNode.SetScale(0.5f);
+			bookshelfNode = Scene.InstantiateXml(
+				source: ResourceCache.GetFile("Objects/Scene.xml"),
+				position: new Vector3(0, -1f, 1f),
+				rotation: new Quaternion(0, 90, 0));
+			bookshelfNode.SetScale(0.5f);
 
 
 			Input.TouchBegin += OnTouchBegin;
 			Input.TouchEnd += OnTouchEnd;
 
 			UnhandledException += UrhoApp_UnhandledException;
-        }
+		}
 
 		void UrhoApp_UnhandledException(object sender, Urho.UnhandledExceptionEventArgs e)
 		{
@@ -66,5 +66,5 @@ namespace UrhoArkitDemo
 
 			base.OnUpdate(timeStep);
 		}
-    }
+	}
 }
