@@ -1,0 +1,8 @@
+<material>
+	<technique name="Techniques/DiffNormal.xml"/>
+	<texture name="Textures/Bookshelf_Baked.jpg" unit="diffuse"/>
+	<texture name="Textures/Bookshelf_NRM.jpg" unit="normal"/>
+	<texture name="Textures/Bookshelf_SPC.jpg" unit="specular"/>
+	<parameter name="MatDiffColor" value="0.8 0.8 0.8 1"/>
+	<parameter name="MatSpecColor" value="0 0 0 1"/>
+</material>

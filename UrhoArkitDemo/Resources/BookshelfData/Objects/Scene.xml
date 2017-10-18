@@ -1,0 +1,17 @@
+<node id="16777216">
+	<attribute name="Name" value="Scene"/>
+	<node id="16777217">
+		<attribute name="Name" value="Books"/>
+		<component id="16777216" type="StaticModel">
+			<attribute name="Model" value="Model;Models/Books.mdl"/>
+			<attribute name="Material" value="Material;Materials/Books.xml"/>
+		</component>
+	</node>
+	<node id="16777218">
+		<attribute name="Name" value="Bookshelf"/>
+		<component id="16777219" type="StaticModel">
+			<attribute name="Model" value="Model;Models/Bookshelf.mdl"/>
+			<attribute name="Material" value="Material;Materials/Bookshelf.xml"/>
+		</component>
+	</node>
+</node>
